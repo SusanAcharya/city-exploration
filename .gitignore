@@ -23,3 +23,9 @@ dist-ssr
 *.sln
 *.sw?
 
+# Project docs/assets (ignore local copies)
+ASSETS_LIST.txt
+req-doc.txt
+QUICKSTART.md
+README_REACT.md
+
