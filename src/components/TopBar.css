@@ -1,0 +1,20 @@
+.season-pass-btn,
+.district-selector-btn {
+  background: linear-gradient(180deg, var(--accent-blue) 0%, #008bc7 100%);
+  border: 2px solid #0b2a3a;
+  border-radius: 6px;
+  padding: 6px 16px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.95em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: 'Jersey 10', system-ui, sans-serif;
+}
+
+.season-pass-btn:hover,
+.district-selector-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 180, 255, 0.35);
+}
+

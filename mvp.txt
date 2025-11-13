@@ -1,0 +1,119 @@
+
+---
+
+# **Emerald City: District Hustle**
+
+### **Game Overview**
+
+**Emerald City: District Hustle** is a lightweight, on-chain web game where players explore a living city as **Gangsters, Detectives, or Civilians**, earning and spending **CROWN** tokens while influencing the city’s balance between crime and prosperity.
+Players walk around **districts**, visit **player-owned lands** (like hotels, shops, hospitals, and arenas), interact with simple systems, and shape the world through their daily actions.
+
+---
+
+## **Core Concept**
+
+Every action you take affects both your wallet and the world.
+
+* **Gangsters** thrive on chaos.
+* **Detectives** enforce order.
+* **Civilians** profit from stability.
+
+Each district’s state shifts between **Order** and **Chaos**, depending on player activity — changing event odds, item prices, and CROWN multipliers.
+
+---
+
+## **Gameplay Loop**
+
+### **Daily Loop**
+
+1. **Enter a District**
+   Choose where to spawn — each district has unique economy and state.
+2. **Move Around the Map**
+   Walk through tiles (2D world) — hotels, shops, hospitals, arenas, and transit points.
+3. **Interact with Buildings (Lands)**
+
+   * **Shop (Industrial)** → Buy/sell weapons, goods, or consumables.
+   * **Hotel (Residential)** → Rest to regain energy; pay rent to owner.
+   * **Hospital (Health)** → Heal or get extra moves.
+   * **Arena (Commercial)** → Join PvE or PvP battles for CROWN and leaderboard ranks.
+   * **Transit (Station)** → Travel to another district.
+4. **Do Activities Based on NFT Role:**
+
+   * **Gangsters:** Smuggle, bribe, extort.
+   * **Detectives:** Patrol, confiscate, report.
+   * **Civilians:** Trade, invest, adapt.
+5. **Earn Rewards:**
+
+   * CROWN, items, influence points, and progression XP.
+6. **Affect the District:**
+
+   * Raise or lower **Crime Index** or **Prosperity Index** through your actions.
+
+---
+
+## **Land Utility**
+
+All lands are owned by players.
+Each land type generates **revenue share** from other players’ visits and **active perks** for the owner.
+
+| Land Type               | Player Action              | Owner Benefit                             |
+| ----------------------- | -------------------------- | ----------------------------------------- |
+| **Residential (Hotel)** | Rest or regain energy      | Earn rent; regain stamina faster if owned |
+| **Industrial (Shop)**   | Buy/sell items             | Earn % of transactions; owner discounts   |
+| **Health (Hospital)**   | Heal or boost energy       | Earn small fee per heal                   |
+| **Commercial (Arena)**  | Join battles               | Earn tax from battles                     |
+| **Transit (Station)**   | Travel to another district | Earn fare from travelers                  |
+
+---
+
+## **District System**
+
+Each district tracks two shared metrics:
+
+| Stat                 | Raised by         | Lowered by        | Effect                                       |
+| -------------------- | ----------------- | ----------------- | -------------------------------------------- |
+| **Crime Index**      | Gangster activity | Detective patrols | Increases black market yield but raises risk |
+| **Prosperity Index** | Civilian activity | High crime        | Boosts passive income and business success   |
+
+Every few days, the **district state updates** — changing building prices, item yields, and event odds.
+
+---
+
+## **Arena System**
+
+Each district has an **Arena** — the leaderboard hub.
+
+* Top 3 players earn **passive CROWN/hour** while retaining rank.
+* Other players can challenge them asynchronously (simulated battles).
+* Battles use player stats, equipped items, and luck — not complex real-time combat.
+
+---
+
+## **NFT Roles**
+
+| Role          | Goal                        | Abilities                  | Playstyle                |
+| ------------- | --------------------------- | -------------------------- | ------------------------ |
+| **Gangster**  | Profit through chaos        | Extort, Smuggle, Bribe     | High-risk, high-reward   |
+| **Detective** | Control and profit from law | Patrol, Confiscate, Report | Tactical, control-based  |
+| **Civilian**  | Build and invest            | Trade, Invest, Adapt       | Balanced, economy-driven |
+
+---
+
+## **Progression**
+
+* Earn XP and items through daily actions.
+* Use CROWN to upgrade NFTs, buy equipment, or acquire land.
+* Faction progress contributes to district-wide outcomes (Order vs. Chaos).
+
+---
+
+## **Core Pillars**
+
+* **Fun:** Short sessions, quick actions, real economic impact.
+* **Finance:** Real player-owned lands and CROWN economy.
+* **Narrative:** Every district tells a story of power, order, and ambition.
+* **Streamable:** Easy to follow — watch players explore, shop, and climb leaderboards.
+* **Low Dev Effort:** Built on a simple 2D web map with buttons for all interactions.
+
+---
+

@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+/* Theme variables for urban neon pixel style */
+:root {
+  --bg-1: #1b1f2a;         /* deep asphalt */
+  --bg-2: #262b36;         /* darker panels */
+  --panel-bg: #2f3542;     /* HUD panels */
+  --panel-edge: #3d414d;   /* bezel edge */
+  --accent-blue: #00b4ff;  /* neon cyan */
+  --accent-orange: #ff6a00;/* neon orange */
+  --hud-green: #6bff6b;    /* health HUD */
+  --text: #e6e6e6;
+  --muted: #9aa3b2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Jersey 10', system-ui, sans-serif;
+  letter-spacing: 0.5px;
+  background: radial-gradient(1200px 700px at 50% 20%, rgba(255,255,255,0.05), transparent 60%),
+              linear-gradient(180deg, var(--bg-1) 0%, var(--bg-2) 100%);
+  color: var(--text);
+  overflow: hidden;
+  height: 100vh;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+/* Ensure all game images render as pixel art */
+img {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a2e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4ecca3;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00d2ff;
+}
+
+/* Utility: pixel outline */
+.pixel-border {
+  border: 2px solid var(--accent-blue);
+  box-shadow: inset 0 0 0 2px var(--panel-edge), 0 0 0 2px var(--panel-edge);
+}
+

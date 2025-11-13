@@ -1,0 +1,65 @@
+.district-selector {
+  min-width: 700px;
+  max-width: 900px;
+}
+
+.districts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.district-card {
+  background: linear-gradient(180deg, var(--panel-bg) 0%, #252a36 100%);
+  border: 3px solid var(--accent-blue);
+  border-radius: 8px;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  font-family: 'Jersey 10', system-ui, sans-serif;
+}
+
+.district-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-orange);
+  box-shadow: 0 5px 20px rgba(0, 180, 255, 0.2);
+}
+
+.district-card.current {
+  border-color: #ffd93d;
+  background: linear-gradient(135deg, #3a3a1e 0%, #2a2a1e 100%);
+}
+
+.district-card h3 {
+  color: var(--accent-blue);
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.district-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.district-info .stat-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.95em;
+  color: var(--muted);
+}
+
+.current-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ffd93d;
+  color: #222831;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 0.8em;
+  font-weight: 700;
+}
+

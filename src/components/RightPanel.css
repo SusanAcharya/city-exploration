@@ -1,0 +1,14 @@
+.badges-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.no-badges,
+.no-leaders {
+  color: #aaa;
+  font-size: 0.85em;
+  text-align: center;
+  padding: 10px;
+}
+

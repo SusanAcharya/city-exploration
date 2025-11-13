@@ -1,0 +1,128 @@
+═══════════════════════════════════════════════════════════════
+  EMERALD CITY: DISTRICT HUSTLE - ASSETS LIST
+═══════════════════════════════════════════════════════════════
+
+🎨 ART STYLE REFERENCE:
+- Pixel art / retro style
+- Vibrant colors (greens, blues, purples, yellows, oranges)
+- Top-down perspective
+- Fantasy/adventure aesthetic with urban elements
+- Clear sprites with strong outlines
+
+═══════════════════════════════════════════════════════════════
+
+📁 RECOMMENDED ASSETS (All Optional - Game works with emojis):
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+1. CHARACTER SPRITES (32x32 or 64x64 px)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   - gangster.png      (Tough guy with weapon, dark colors)
+   - detective.png     (Badge, uniform, blue colors)
+   - civilian.png      (Business attire, neutral colors)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+2. BUILDING SPRITES (64x64 or 128x128 px)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   - hotel.png         (Tall building, warm lights)
+   - shop.png          (Market/store front, colorful)
+   - hospital.png      (Medical cross, clean white/red)
+   - arena.png         (Colosseum/stadium style, dramatic)
+   - transit.png       (Train/metro station, modern)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+3. MAP TILES (32x32 px)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   - grass-tile.png    (Green grass texture)
+   - road-tile.png     (Gray/dark pavement)
+   - sidewalk.png      (Light gray, between road and buildings)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+4. UI ICONS (16x16 or 32x32 px)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   - crown-icon.png    (Golden crown for currency)
+   - health-icon.png   (Red heart)
+   - energy-icon.png   (Lightning bolt, yellow)
+   - xp-icon.png       (Star or level up icon)
+   - influence-icon.png (Trophy or medal)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+5. ITEM ICONS (32x32 px) - For Inventory
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   - pistol.png        (Small handgun)
+   - knife.png         (Combat knife)
+   - armor.png         (Body armor/vest)
+   - medkit.png        (First aid kit)
+   - gadget.png        (Tech device/phone)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+6. BACKGROUND IMAGES (Optional - 1920x1080 or smaller)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   - downtown-bg.png   (Urban skyline, mixed atmosphere)
+   - uptown-bg.png     (Fancy buildings, clean)
+   - industrial-bg.png (Factories, gritty)
+   - waterfront-bg.png (Ocean/docks view)
+   - suburbs-bg.png    (Residential, peaceful)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+7. UI ELEMENTS (Various sizes)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   - panel-border.png  (Decorative frame for UI panels)
+   - button-bg.png     (Button background texture)
+   - modal-bg.png      (Semi-transparent modal overlay)
+   - logo.png          (Game logo/title)
+
+═══════════════════════════════════════════════════════════════
+
+📍 WHERE TO PLACE ASSETS:
+
+Create this folder structure:
+
+emerald-city/
+└── assets/
+    ├── characters/    (Character sprites)
+    ├── buildings/     (Building sprites)
+    ├── tiles/         (Map tiles)
+    ├── ui/            (UI icons)
+    ├── items/         (Item icons)
+    └── backgrounds/   (Background images)
+
+═══════════════════════════════════════════════════════════════
+
+🎨 COLOR PALETTE SUGGESTIONS:
+
+PRIMARY COLORS:
+- Emerald Green:  #4ECCA3
+- Deep Blue:      #00D2FF  
+- Dark Navy:      #1A1A2E
+- Gold/Crown:     #FFD93D
+
+ROLE COLORS:
+- Gangster Red:   #FF6B6B
+- Detective Blue: #4DABF7
+- Civilian Green: #51CF66
+
+DISTRICT MOOD:
+- Order/Prosperity: Bright greens, blues
+- Chaos/Crime:      Dark reds, purples
+- Neutral:          Grays, yellows
+
+═══════════════════════════════════════════════════════════════
+
+💡 NOTES:
+
+1. All assets are OPTIONAL - the game fully works with emoji icons
+2. Using pixel art will significantly enhance the visual appeal
+3. Keep file sizes small for fast loading
+4. Use PNG format with transparency
+5. Maintain consistent pixel art resolution (32x32 or 64x64)
+6. Add glow effects or outlines for important elements
+
+═══════════════════════════════════════════════════════════════
+
+To integrate assets once created:
+1. Place files in the assets folder structure above
+2. Update game.js to load images instead of emojis
+3. Update styles.css for any background images
+
+═══════════════════════════════════════════════════════════════
+

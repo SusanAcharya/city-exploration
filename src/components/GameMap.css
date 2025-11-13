@@ -1,0 +1,104 @@
+/* Map Container */
+.map-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.map-header {
+  background: linear-gradient(180deg, var(--panel-bg) 0%, #252a36 100%);
+  border: 3px solid var(--accent-blue);
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 0.95em;
+  color: #ffd93d;
+  font-family: 'Jersey 10', system-ui, sans-serif;
+}
+
+.game-map {
+  flex: 1;
+  background: linear-gradient(180deg, #2b2f3a 0%, #262b36 100%);
+  border: 4px solid var(--accent-blue);
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  gap: 0px;
+  padding: 1px;
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.6);
+}
+
+.tile {
+  background: url('/assets/tiles/grass-tile.png');
+  background-size: cover;
+  background-position: center;
+  border: 0.5px solid #1a1f2a;
+  position: relative;
+  transition: all 0.1s ease;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.tile:hover { filter: brightness(1.1); }
+
+.tile.building {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9em;
+  cursor: pointer;
+  background: linear-gradient(180deg, #2c3140 0%, #212632 100%);
+  border: 1px solid var(--accent-blue);
+}
+
+.tile.building:hover { background: linear-gradient(180deg, var(--accent-orange) 0%, #cc5600 100%); transform: scale(1.05); z-index: 10; }
+
+.building-sprite { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
+
+.building-sprite img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  pointer-events: none;
+}
+
+.player {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+  z-index: 100;
+  animation: pulse 2s ease-in-out infinite;
+  filter: drop-shadow(0 0 5px rgba(255, 217, 61, 0.6));
+}
+
+.player img { width: 100%; height: 100%; object-fit: contain; image-rendering: pixelated; image-rendering: crisp-edges; pointer-events: none; }
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.map-legend {
+  background: linear-gradient(180deg, var(--panel-bg) 0%, #252a36 100%);
+  border: 3px solid var(--accent-blue);
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.9em;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-family: 'Jersey 10', system-ui, sans-serif;
+}
+

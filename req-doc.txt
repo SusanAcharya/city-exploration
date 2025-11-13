@@ -1,0 +1,218 @@
+Assets
+Mint Stats
+3333 Lands (minted)
+
+
+5555 Gangsters & Detectives (minted)
+
+
+7000 Lands (remaining)
+
+
+2000 Civilians (upcoming mint, expandable with new generations)
+You play as your NFT (Gangster / Detective / Civilian).
+Move around districts on the city map — each district has:
+Hotel (Residential)
+Shop (Industrial)
+Medical Center (Hospital)
+Arena
+Players explore, buy, rest, fight, and earn based on what they do and where they do it.
+
+
+Gameplay Core
+Explore and compete across 9 Districts.
+Each district features arenas, land types, and facilities (Health, Education, Recreation, etc.).
+Players battle NPCs or players, train, recover, and travel between districts.
+Owning land provides passive rewards and fee shares from district activities.
+
+
+Season System
+Each player must buy a Season Pass (5 SUI) to participate.
+
+
+Includes:
+
+
+CROWN bundle
+
+
+Entry into the Seasonal Leaderboard
+
+
+80% of all Season Pass fees go into the Seasonal Reward Pool.
+
+
+Top 10 players in the Seasonal Leaderboard win SUI rewards.
+
+
+District Economy
+Every district is its own mini-economy.
+
+
+Land owners (Residential, Industrial, Medical, etc.) earn a cut of all activity in their zone.
+
+
+Examples:
+
+
+Hotel (Residential) → earns rent from players resting or saving progress.
+
+
+Shop (Industrial) → earns from every item, weapon, or supply sold.
+
+
+Medical Center → earns from healing or status recovery fees.
+
+
+Arena → could have a small tax that goes to District Boss (highest rank) or shared with landowners.
+
+
+So every player action fuels the economy for the district’s stakeholders — a living city simulation.
+District Facilities (Tiles)
+Each district contains these key land types:
+Residential: Recover health/stamina (CROWN sink).
+Industrial: Buy/craft weapons & items (CROWN sink).
+Health: Recover from defeat (0 HP) — higher recovery cost.
+Education: Civilians can train to increase EMZ or XP gain.
+Recreation: Arena entry hub (join PvP battles).
+Government: RNG Tax applied (CROWN sink).
+Commercial: Access to consumables, boosters, etc.
+Airport: District travel gateway (CROWN sink).
+
+Combat & Arena
+Every district has an Arena — players can battle for rankings.
+Top 3 in each Arena gain passive CROWN/hour as long as they hold their rank.
+Others can challenge them anytime to steal the spot.
+Battles are simulated based on stats, items, and perks — no complex gameplay required.
+Battle System
+Passive 1v1 turn-based simulation, inspired by gang wars.
+Each turn uses player stats, chosen weapon/item/perk, and RNG.
+Battle ends when one NFT’s HP reaches 0.
+Weapons, items, and special/sneak moves are one-time-use consumables.
+Players can set a loadout for when they’re attacked while offline (defense mode).
+Battle outcomes reward CROWN, XP, and rank progression.
+
+
+Leaderboard & Rewards
+District Leaderboards
+Top 3 per district receive CROWN.
+
+
+Top spots display NFT badges (visual flex).
+
+
+Holding multiple district top spots gives multiplier bonuses to all CROWN and EMZ earnings.
+
+
+Seasonal Leaderboard
+Ranks all active players across districts.
+
+
+Top 10 players receive SUI rewards from the Seasonal Reward Pool.
+
+Badges & Achievements
+Defeat Badges: Earned by defeating specific NFTs (Gangster/Detective). Think Pokedex from Pokemon games.
+
+Arena Badge: For holding top position in any District Arena.
+District Domination Badge: For reaching #1 in a district (exclusive NFT/badge).
+Badges add status + small seasonal XP bonus.
+
+NFT Perks:
+ (Needs more work/research to make it differentiable & dynamic)
+Gangster:
+High ATK, Low DEF
+Shops give them weapon discounts
+Can "intimidate" NPCs for extra rewards (risk/reward mechanic)
+Ideas:
+Raider Bonus: +25% CROWN gain from offensive wins (arena & raids)
+Black Market Access: Discount on weapon/item purchases (industrial areas)
+Fear Aura: Small chance to force NPCs to drop bonus EMZ after defeat
+Street Tax: Earn a fraction of EMZ whenever a player uses your district’s industrial area (if you own land)
+Gang Respect: +XP gain for chain victories (win streaks)
+Aggro Boost: In Crime Hub state, +1 arena attack per cooldown cycle
+Hotel/resting cost is higher due to “wanted status
+Slower passive income during Lawful City world state
+Wanted Status: Resting or healing costs +30 % in hotels (residential).
+Detective Pressure: Lose 15 % more EMZ when defeated by Detectives.
+Lawful City Penalty: Item costs rise +20 %; arena cooldowns slightly longer.
+
+Detective:
+Balanced ATK/DEF
+Hospitals cost less (cheaper healing)
+Can "investigate" opponents before challenging (see their stats/loadout)
+Ideas:
+Law Bonus: +20% EMZ gain from defensive wins (holding arena ranks)
+Crime Tracker: Bonus EMZ when defeating Gangsters in arena
+Case Solved: Small XP boost when defeating higher-ranked opponents
+Surveillance: Higher chance to detect rare NPCs in districts (bonus drops)
+Order Dividend: During Lawful City, gain +10% EMZ from all actions
+Efficient Rest: Hotels cost less EMZ for Detectives
+Less EMZ from raids and aggressive actions
+Reduced item find rate in Crime Hub state
+
+Civilian:
+Low ATK, High DEF/HP
+Hotels cost less (cheaper rest)
+Earn CROWN passively just from traveling/exploring
+Can flee from losing battles (don't lose rank/items)
+Passive ability: Bonus rewards from NPC quests
+Ideas:
+Market Sense: 15 % discount in all shops during Neutral state.
+Entrepreneur Bonus: Gain 10 % extra EMZ from land activity (hotel/industrial revenue) regardless of world state.
+Negotiator: 10 % reduced fee when converting CROWN ↔ EMZ.
+Balanced Focus: +10 % XP from any non-combat mission (district events, NPC jobs).
+Combat Lite: Arena battles yield 15 % less EMZ on wins.
+Caught in Crossfire: Pay higher taxes/bribes in extreme states (Crime Hub +20 %, Lawful City +10 %).
+NPCs & Progression
+Districts have NPC enemies or “street encounters” for solo battles.
+Defeating them earns XP, loot, or items.
+Some NPCs guard rare drops or special missions.
+Loop Example
+You enter District 7.
+Heal at a Medical Center → owner earns a cut.
+Buy weapon at Shop → Industrial landowners earn.
+Battle an NPC → gain XP.
+Enter Arena → beat a rival → move up ranks → earn passive CROWN/hour.
+Rest in Hotel → recover stamina → Residential owners earn rent.
+Economy
+Everything runs on CROWN —> the single token.
+CROWN Faucets
+Battle rewards (PvE/PvP)
+District arena leaderboards (Top 3 per district)
+Seasonal leaderboard rewards
+Land revenue (for landowners)
+Badges and achievements
+
+
+CROWN Sinks
+Health recovery (defeated recovery)
+Weapons, items, perks
+Training (education)
+District travel (airport)
+Arena entry (recreation)
+Taxes (government RNG)
+Maintenance (optional durability costs)
+
+
+
+Why explore different districts?
+Once you reach the top spot of a district, you will earn a badge/NFT. You will start earning CROWN per hourly rate.
+To increase CROWN multipliers by holding multiple top spots in different districts.
+Holding multiple top positions multiplies total CROWN earnings:
+2 Districts → +10%
+3 Districts → +25%
+5+ Districts → +50%
+To collect more badges and expand influence.
+To strategically shift world balance in favor of their NFT faction.
+
+World State System
+
+(Needs more work and research)
+The world state changes dynamically depending on which NFT type holds the majority of top arena ranks across all districts.
+It changes every 24 hours and directly affects gameplay rewards, risk levels, and the city’s atmosphere.
+This system gives players a collective goal and keeps the city alive — when one faction grows too strong, others are motivated to fight back to rebalance the world.
+How the State Is Determined
+Every 24 hours, the system checks:
+Total number of top-ranked players (Top 10) across all districts, grouped by NFT type.
+Whichever type holds the majority defines the next City State for the next 24 hours.
+
