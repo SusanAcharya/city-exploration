@@ -303,7 +303,7 @@ export default function BuildingModal({
           { id: '6', name: 'Elite Civilian', icon: '💼', level: 5, role: 'civilian' as const },
         ];
 
-        const handleChallengeCharacter = (characterId: string, characterName: string) => {
+        const handleChallengeCharacter = (characterName: string) => {
           addEventLog(`Challenging ${characterName}...`, 'warning');
           // Use medium difficulty as default for character challenges
           handleArenaAction('medium');
@@ -349,7 +349,7 @@ export default function BuildingModal({
                     <div className="character-level">Level {character.level}</div>
                     <button
                       className="challenge-btn"
-                      onClick={() => handleChallengeCharacter(character.id, character.name)}
+                      onClick={() => handleChallengeCharacter(character.name)}
                     >
                       Challenge
                     </button>
