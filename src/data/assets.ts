@@ -29,6 +29,9 @@ export const Assets = {
     detective: '👮',
     civilian: '👔',
   },
+  ui: {
+    logo: '/assets/ui/logo.png',
+  },
 };
 
 // Helper to check if asset exists, fallback to emoji

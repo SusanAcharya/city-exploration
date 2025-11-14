@@ -33,9 +33,12 @@ export default function RoleSelection({ onSelectRole }: RoleSelectionProps) {
     <div className="role-selection-modal active">
       <div className="role-select-background">
         <div className="role-select-header">
-          <h1>EMERALD CITY</h1>
-          <h2>DISTRICT HUSTLE</h2>
-          <p className="subtitle">SELECT YOUR IDENTITY</p>
+          <img src={Assets.ui.logo} alt="Emerald City Logo" className="header-logo" />
+          <div className="header-text">
+            <h1>EMERALD CITY</h1>
+            <h2>DISTRICT HUSTLE</h2>
+            <p className="subtitle">SELECT YOUR IDENTITY</p>
+          </div>
         </div>
         <div className="role-cards">
           {(['gangster', 'detective', 'civilian'] as NFTRole[]).map(role => {
@@ -50,7 +53,9 @@ export default function RoleSelection({ onSelectRole }: RoleSelectionProps) {
                 style={{ '--accent-color': info.accentColor } as React.CSSProperties}
               >
                 <div className="id-card-header">
-                  <div className="id-card-logo">EC</div>
+                  <div className="id-card-logo">
+                    <img src={Assets.ui.logo} alt="EC Logo" className="id-logo-img" />
+                  </div>
                   <div className="id-card-title">EMERALD CITY ID</div>
                 </div>
                 <div className="id-card-body">

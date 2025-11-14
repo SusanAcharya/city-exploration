@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Building } from '../types/game';
 import { useGameState } from '../hooks/useGameState';
 import './BuildingModal.css';
@@ -17,6 +17,14 @@ export default function BuildingModal({
   addEventLog,
 }: BuildingModalProps) {
   const { player, currentDistrict } = gameState.gameState;
+  
+  // Odds game state for commercial buildings
+  const [oddsGame, setOddsGame] = useState<{
+    first: number;
+    third: number;
+    second: number | null;
+    hasRolled: boolean;
+  } | null>(null);
 
   const handleHotelAction = (type: 'quick' | 'full' | 'luxury') => {
     let cost = 0;
@@ -196,6 +204,47 @@ export default function BuildingModal({
 
     addEventLog(`Traveled to district ${districtId}!`, 'success');
     onClose();
+  };
+
+  // Initialize odds game when commercial building is opened
+  useEffect(() => {
+    if (building.type === 'commercial' && !oddsGame) {
+      // Generate first number (1 to 80, leaving room for third to be at least 10 higher)
+      const first = Math.floor(Math.random() * 80) + 1;
+      // Generate third number (first + 10 to 100)
+      const third = Math.floor(Math.random() * (100 - first - 9)) + first + 10;
+      setOddsGame({
+        first,
+        third,
+        second: null,
+        hasRolled: false,
+      });
+    } else if (building.type !== 'commercial') {
+      // Reset odds game when switching to a different building type
+      setOddsGame(null);
+    }
+  }, [building.type, oddsGame]);
+
+  const handleOddsRoll = () => {
+    if (!oddsGame || oddsGame.hasRolled) return;
+    
+    const second = Math.floor(Math.random() * 100) + 1;
+    const won = second > oddsGame.first && second < oddsGame.third;
+    
+    setOddsGame({
+      ...oddsGame,
+      second,
+      hasRolled: true,
+    });
+
+    if (won) {
+      gameState.updatePlayer({
+        crown: player.crown + 50,
+      });
+      addEventLog(`You won! Earned 50 CROWN! (Rolled ${second})`, 'success');
+    } else {
+      addEventLog(`You lost! Rolled ${second} (needed between ${oddsGame.first + 1} and ${oddsGame.third - 1})`, 'danger');
+    }
   };
 
   const renderContent = () => {
@@ -416,6 +465,57 @@ export default function BuildingModal({
                   </button>
                 ))}
             </div>
+          </>
+        );
+
+      case 'commercial':
+        return (
+          <>
+            <div className="modal-header">
+              <div className="building-icon">{building.icon}</div>
+              <h2>{building.name}</h2>
+              <p>Test your luck in the odds game</p>
+            </div>
+            {oddsGame && (
+              <div className="odds-game">
+                <div className="odds-instructions">
+                  <p>Roll a number between {oddsGame.first + 1} and {oddsGame.third - 1} to win 50 CROWN!</p>
+                </div>
+                <div className="odds-numbers">
+                  <div className="odds-number-display">
+                    <div className="odds-label">First Number</div>
+                    <div className="odds-value">{oddsGame.first}</div>
+                  </div>
+                  <div className="odds-number-display">
+                    <div className="odds-label">Your Roll</div>
+                    <div className="odds-value">
+                      {oddsGame.hasRolled ? oddsGame.second : '?'}
+                    </div>
+                  </div>
+                  <div className="odds-number-display">
+                    <div className="odds-label">Third Number</div>
+                    <div className="odds-value">{oddsGame.third}</div>
+                  </div>
+                </div>
+                <div className="odds-actions">
+                  {!oddsGame.hasRolled ? (
+                    <button className="modal-action-btn" onClick={handleOddsRoll}>
+                      <span>🎲 Roll the Dice</span>
+                      <span className="cost">Free</span>
+                    </button>
+                  ) : (
+                    <div className="odds-result">
+                      {oddsGame.second !== null && 
+                        (oddsGame.second > oddsGame.first && oddsGame.second < oddsGame.third) ? (
+                        <div className="odds-win">🎉 You Won! +50 CROWN</div>
+                      ) : (
+                        <div className="odds-lose">❌ You Lost! Try again next time</div>
+                      )}
+                    </div>
+                  )}
+                </div>
+              </div>
+            )}
           </>
         );
 
